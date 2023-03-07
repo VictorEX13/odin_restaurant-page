@@ -1,0 +1,23 @@
+{
+  "name": "odin_restaurant-page",
+  "version": "1.0.0",
+  "description": "Repo for The Odin Project's project: Restaurant Page.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/VictorEX13/odin_restaurant-page.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/VictorEX13/odin_restaurant-page/issues"
+  },
+  "homepage": "https://github.com/VictorEX13/odin_restaurant-page#readme",
+  "devDependencies": {
+    "webpack": "^5.75.0",
+    "webpack-cli": "^5.0.1"
+  }
+}
