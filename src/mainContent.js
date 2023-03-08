@@ -1,32 +1,19 @@
+import Home from "./home.js";
+
 class Main {
-  createMain = () => {
+  createMain = (renderHome) => {
     const main = document.createElement("main");
-    const section = document.createElement("section");
-    section.classList.add("display");
+    const content = document.createElement("div");
+    content.classList.add("display");
 
-    const article = document.createElement("article");
-    article.classList.add("about");
+    if (renderHome) {
+      const home = new Home();
+      const pageContent = home.createHome();
 
-    const firstText = document.createElement("p");
-    const heading = document.createElement("h1");
-    const secondText = document.createElement("p");
+      content.appendChild(pageContent);
+    }
 
-    firstText.textContent = `Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-        Molestias corrupti voluptatum in consectetur rerum, aliquam
-        sapiente repudiandae ipsum asperiores itaque.`;
-
-    heading.textContent = "M. Cee Donaldo";
-
-    secondText.textContent = `Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam dolore
-        laudantium culpa omnis adipisci quibusdam eveniet corporis modi quaerat
-        incidunt.`;
-
-    article.appendChild(firstText);
-    article.appendChild(heading);
-    article.appendChild(secondText);
-
-    section.appendChild(article);
-    main.appendChild(section);
+    main.appendChild(content);
 
     return main;
   };

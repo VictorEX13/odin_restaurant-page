@@ -4,6 +4,7 @@ class Header {
 
     const itemLink = document.createElement("a");
     itemLink.textContent = text;
+    itemLink.classList.add(text.toLowerCase());
     itemLink.setAttribute("href", "#");
 
     item.appendChild(itemLink);

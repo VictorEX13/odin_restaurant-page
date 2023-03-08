@@ -83,6 +83,21 @@ main {
     gap: 70px;
 }
 
+.menu-container {
+    display: grid;
+    grid-template: repeat(2, 1fr) / repeat(2, 1fr);
+    gap: 30px;
+}
+
+article {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    border: gray;
+}
+
 footer {
     flex-basis: 10%;
     display: flex;

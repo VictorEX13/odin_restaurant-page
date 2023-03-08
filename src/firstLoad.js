@@ -9,5 +9,5 @@ const main = new Main();
 const footer = new Footer();
 
 content.appendChild(header.createHeader());
-content.appendChild(main.createMain());
+content.appendChild(main.createMain(true));
 content.appendChild(footer.createFooter());
